@@ -26,13 +26,8 @@ function revealTime(){
 revealTime();
 
 function hideTime(){
-    document.querySelector("#DigitalClock").classList.add("hide");
+    document.querySelector("#DigitalClock").classList.toggle("hide");
 }
 
 document.getElementById("btn-hide").addEventListener("click", hideTime);
 
-function showTime(){
-    document.getElementById("DigitalClock").classList.remove("hide");;
-}
-
-document.getElementById("btn-hide").addEventListener("dblclick", showTime);
